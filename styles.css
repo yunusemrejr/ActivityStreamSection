@@ -1,0 +1,117 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Page header */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom:55px;
+  font-size: 2.5rem; /* around 40px */
+  color: #50a1ff;  
+}
+
+/* Activity log container */
+.log {
+  background-color: #c7ffd1;  /* light greenish color */
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 4, 0, 0.5);
+}
+
+.log .date {
+  font-weight: lighter;
+  color: gray;  
+  font-size: 1.1rem; /* ratioed to the root element which is html tag*/
+  background-color: #f5f8fa; /* twitter-like bg gray */
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.log .time {
+  font-weight: lighter;
+  color: gray;  
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #f5f8fa; /* twitter-like bg gray */
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.log .title {
+  font-size: 1.175rem;
+  color: #1877f2; /* facebook blue :) */
+  margin-top: 1.25rem;
+  margin-bottom: 0.425rem;
+  margin-left: 10px;
+}
+
+.log .body {
+   margin-left: 10px;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: #1c1e21; 
+ 
+
+}
+
+/* pagination styles prev...1..2..3..4..next */
+.pagination {
+  text-align: center;
+  margin-top: 1.55rem;
+}
+
+.pagination a,
+.pagination .current-page {
+  display: inline-block;
+  padding: 0.4125rem 0.825rem;
+  background-color: #ffffff;
+  border: 1px solid gray;  
+  color: black;
+  text-decoration: none;
+  margin-right: 0.3125rem;
+  transition: background-color 4.3s ease;
+  border-radius: 5px;
+}
+
+.pagination .current-page {
+  font-weight: bold;
+    border-radius: 9px;
+    color:blue;
+
+}
+
+.pagination a:hover,
+.pagination .current-page:hover {
+  background-color: gray;  
+  color: gray;
+}
+
+/* Responsiveness for other screeens */
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .log .date {
+    font-size: 0.875rem;
+  }
+
+  .log .time {
+    font-size: 0.75rem;
+  }
+
+  .log .title {
+    font-size: 1rem;
+  }
+
+  .log .body {
+    font-size: 0.875rem;
+  }
+}
